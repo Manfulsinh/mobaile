@@ -1,0 +1,152 @@
+/* Apply basic styling to chat list */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+.chat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style each chat item */
+.chat-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Add hover effect to chat items */
+.chat-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style the user image */
+.chat-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Style chat details */
+.chat-details {
+  flex: 1;
+}
+
+.chat-details h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.chat-details p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Style the timestamp */
+.time {
+  font-size: 12px;
+  color: #999;
+}
+
+
+i.tt.fa-solid.fa-envelope {
+  margin-left: 12px;
+  /* background-color: blue; */
+  /* color: #fff; */
+  /* border-radius: 89%; */
+  font-size: 20px;
+}
+
+
+.check-icon {
+  margin-left: 10px;
+}
+
+/* Style the check icon using Font Awesome */
+.check-icon i {
+  color: #555;
+}
+
+
+.check-icon {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+
+
+
+/* Add animation for the check icon */
+@keyframes checkAnimation {
+  0% { opacity: 0; transform: scale(0.5); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Apply animation to the check icon */
+.check-icon i {
+  animation: checkAnimation 0.3s ease forwards;
+  opacity: 0;
+  transform: scale(0.5);
+}
+.dropdown-toggle {
+  position: relative;
+}
+
+.dropdown-toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url('path-to-your-icon-image');
+  background-size: cover;
+}
+
+.dropdown-number {
+  margin-right: 5px;
+}
+
+
+
+button.btn.dropdown-toggle {
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+
+.down {
+  /* border: 1px solid #111; */
+  border-bottom: 1px solid #999cb4;
+  height: 75px;
+}
+
+
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-group .btn {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.btn-group .btn:last-child {
+  margin-right: 0;
+}

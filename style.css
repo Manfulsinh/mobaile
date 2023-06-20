@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0; overflow: hidden;
 }
 
 
@@ -200,3 +200,6 @@ button.bt1 {
 
 
 
+.hover-effect {
+ background-color: rgb(226, 204, 204);
+}

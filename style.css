@@ -221,6 +221,6 @@ button.bt1 {
 
    .chat-list {
     overflow: auto;
-    max-height: 300px; 
+    max-height: 550px; 
   }  
 }

@@ -1,186 +1,184 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Blue Chat</title>
+ 
 </head>
 <body>
 
-<div class="nav">
-  <div class="container">
-  <div class="cont">
-    <div class="right-icon">
-      <i class="fa-solid fa-arrow-left-long"></i>
-    </div>
-    <div class="logo">
-      <img src="./img/logo.png" alt="Logo"> 
-    </div>
-    <div class="title">Bluchat</div>
-    <div class="menu">
-      <ul>
-        <li> <i class="fas fa-search" id="searchIcon"></i></li>
-        <li>  <i class="fas fa-plus"></i></li>
-        
-      </ul>
-    </div>
+<div class="chat-container">
+    <div class="chat-header">
+   <div class="log"> <i class="fa-solid fa-arrow-left-long"></i><img src="./img/logo.png" alt="Chat Logo">
+    <h5>Blue Chat</h5>
   </div>
-</div>
-</div>
-
-    <div class="down">
-  <div class="row">
-    
-    <div class="col-6" style="text-align: center;">
-      <div class="dropdown">
-        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"> 
-          <i class="fa-solid fa-house"></i></i>All
+   
+    <div class="chat-actions">
+      <i class="fas fa-search" id="searchIcon"></i>
       
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">manful</a>
-          <a class="dropdown-item" href="#">manful22</a>
-          <a class="dropdown-item" href="#">manful 22</a>
-        </div> </button>
-      </div>
+      <i class="fas fa-plus"></i>
     </div>
-    
-    <div class="col-6" style="text-align: center;">
-      <div class="dropdown">
-        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"> 
-          <i class="fa-solid fa-child-reaching"></i>All
-      
-      
-          <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">manful</a>
-            <a class="dropdown-item" href="#">manful22</a>
-            <a class="dropdown-item" href="#">manful 22</a>
-          </div> </button>
-      </div>
-    </div>
-    
-
-  </div>
   </div>  
-
-
-  <ul class="chat-list">
-  <li class="chat-item" tabindex="0">
-    <img src="./img/WhatsApp Image 2023-06-05 at 2.09.03 PM.jpeg" alt="User 1">
-    <div class="chat-details">
-      <h3>manful singh<i class="tt fa-solid fa-envelope"></i></h3>
-      <p>Hey, how's it going?</p>
-   </div>
-    <span class="time">10:30 AM</span>
-    <span class="check-icon"><i class="fas fa-check"></i></span>
-  </li>
-  <li class="chat-item">
-    <img src="./img/7.jpeg" alt="User 2">
-    <div class="chat-details">
-      <h3>manful raj <i class="tt fa-solid fa-message"></i></h3>
-      <p>Can you send me the document?</p>
-     </div>
-    <span class="time">Yesterday</span>
-    <span class="check-icon"><i class="fas fa-check"></i></span>
-  </li>
-  <li class="chat-item">
-    <img src="./img/WhatsApp Image 2023-06-05 at 2.09.03 PM.jpeg" alt="User 3">
-    <div class="chat-details">
-      <h3>dhrumil <i class="tt fa-brands fa-facebook-messenger" style="color: #0d6efd;"></i></h3>
-      <p>Let's meet up for lunch tomorrow.</p>
-  </div>
-    <span class="time">June 17</span>
-    <span class="check-icon"><i class="fas fa-check"></i></span>
-  </li>
-
-
-  <li class="chat-item">
-    <img src="./img/7.jpeg" alt="User 2">
-    <div class="chat-details">
-      <h3>manful raj <i class="tt fa-brands fa-whatsapp" style="color: green;
-        font-weight: 900;"></i></h3>
-      <p>Can you send me the document?</p>
-    </div>
-    <span class="time">Yesterday</span>
-    <span class="check-icon"><i class="fas fa-check-double"></i></span>
-  </li>
-
-  <li class="chat-item">
-    <img src="./img/logo.png" alt="User 2">
-    <div class="chat-details">
-      <h3>manful raj  <i class="tt fa-solid fa-envelope"></i></h3>
-      <p>Can you send me the document?</p>
-    </div>
-    <span class="time">june 19</span>
-    <span class="check-icon"><i class="fas fa-check"></i></span>
-  </li>
-
-
-  <li class="chat-item">
-    <img src="./img/WhatsApp Image 2023-06-05 at 2.09.03 PM.jpeg" alt="User 2">
-    <div class="chat-details">
-      <h3>manful raj <i class="tt fa-brands fa-facebook-messenger" style="color: #0d6efd;"></i></h3>
-      <p>Can you send me the document?</p>
-    </div>
-    <span class="time">Yesterday</span>
-    <span class="check-icon"><i class="fas fa-check-double"></i></span>
-  </li>
-
-  <li class="chat-item">
-    <img src="./img/7.jpeg" alt="User 2">
-    <div class="chat-details">
-      <h3>manful raj <i class="tt fa-solid fa-message"></i></h3>
-      <p>Can you send me the document?</p>
-    </div>
-    <span class="time">today</span>
-    <span class="check-icon"><i class="fas fa-check"></i></span>
-  </li>
-
-  <li class="chat-item">
-    <img src="./img/WhatsApp Image 2023-06-05 at 2.09.03 PM.jpeg" alt="User 2">
-    <div class="chat-details">
-      <h3>manful raj <i class="tt fa-brands fa-whatsapp" style="color: green;
-        font-weight: 900;"></i></h3>
-      <p>Can you send me the document?</p>
-    </div>
-    <span class="time">Yesterday</span>
-    <span class="check-icon"><i class="fas fa-check"></i></span>
-  </li>
-
-  <li class="chat-item">
-    <img src="./img/7.jpeg" alt="User 2">
-    <div class="chat-details">
-      <h3>manful raj  <i class="tt fa-brands fa-facebook-messenger" style="color: #0d6efd;"></i></h3>
-      <p>Can you send me the document?</p>
-    </div>
-    <span class="time">last seen 12 jun</span>
-    <span class="check-icon"><i class="fas fa-check-double"></i></span>
-  </li>
- 
-</ul>  
-
-
-  <div class="bt-1">
-<div class="row">
-  <div class="col-lg-6">
-    <div class="btn-group">
-      <button id="messageButton" class="bt1" type="button">Message</button>
-      <button id="segmentsButton" class="bt1" type="button">Segments</button>
-    </div>
-  </div>
-</div>
-</div> 
-
+  <div class="container">
+    <div class="row">
       
+    <div class="col-6">
+          <div class="dropdown">
+            <button class="btn btn dropdown-toggle" type="button" data-toggle="dropdown">
+              <i class="fa-solid fa-house"></i></i>All
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Option 1.1</a>
+              <a class="dropdown-item" href="#">Option 1.2</a>
+              <a class="dropdown-item" href="#">Option 1.3</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="dropdown">
+            <button class="btn btn dropdown-toggle" type="button" data-toggle="dropdown">
+              <i class="fa-solid fa-child-reaching"></i>All
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Option 2.1</a>
+              <a class="dropdown-item" href="#">Option 2.2</a>
+              <a class="dropdown-item" href="#">Option 2.3</a>
+            </div>
+          </div>
+        </div> 
+     
+    </div>
+  </div>
+  
+
+
+ <div class="chat-list">
+    <div class="chat-item">
+      <div class="chat-avatar">
+        <img src="./img/7.jpeg" alt="User 1">
+      </div>
+      <div class="chat-content">
+        <div class="chat-sender">Arjun singh  <a href="#" target="_blank" class="whatsapp-icon">
+          <i class="fab fa-whatsapp"></i></a></div>
+        <div class="chat-message">Hey, how's it going?</div>
+        <div class="chat-time">10:30 AM</div>
+      </div>
+      <div class="chat-check-icon">
+        <i class="fas fa-check"></i>
+      </div>
+    </div>
+    <div class="chat-item">
+      <div class="chat-avatar">
+        <img src="./img/WhatsApp Image 2023-06-05 at 2.09.03 PM.jpeg" alt="User 2">
+      </div>
+      <div class="chat-content">
+        <div class="chat-sender">Manful<a href="#" target="_blank" class="instagarm-icone"><i class="fa-brands fa-instagram"></i></a></div>
+        <div class="chat-message">Can you send me the document?</div>
+        <div class="chat-time">9:50 AM</div>
+      </div>
+      <div class="chat-check-icon">
+        <i class="fas fa-check-double"></i>
+      </div>
+    </div>
+    <div class="chat-item">
+      <div class="chat-avatar">
+        <img src="./img/7.jpeg" alt="User 2">
+      </div>
+      <div class="chat-content">
+        <div class="chat-sender">Vikram</div>
+        <div class="chat-message">Can you send me the document?</div>
+        <div class="chat-time">Yesterday</div>
+      </div>
+      <div class="chat-check-icon">
+        <i class="fas fa-check"></i>
+      </div>
+    </div>
+    <div class="chat-item">
+      <div class="chat-avatar">
+        <img src="./img/WhatsApp Image 2023-06-05 at 2.09.03 PM.jpeg" alt="User 2">
+      </div>
+      <div class="chat-content">
+        <div class="chat-sender">Pravin<a href="#" target="_blank" class="messenger-icone"><i class="fa-brands fa-facebook-messenger"></i></a></div>
+        <div class="chat-message">Can you send me the document?</div>
+        <div class="chat-time">10:30 AM</div>
+      </div>
+      <div class="chat-check-icon">
+        <i class="fas fa-check-double"></i>
+      </div>
+    </div>
+    <div class="chat-item">
+      <div class="chat-avatar">
+        <img src="./img/7.jpeg" alt="User 2">
+      </div>
+      <div class="chat-content">
+        <div class="chat-sender">Dhanraj sinh <a href="#" target="_blank" class="email-icon"><i class="fa-solid fa-envelope"></i></a></div>
+        <div class="chat-message">Can you send me the document?</div>
+        <div class="chat-time">Yesterday</div>
+      </div>
+      <div class="chat-check-icon">
+        <i class="fas fa-check"></i>
+      </div>
+    </div>
+
+    <div class="chat-item">
+      <div class="chat-avatar">
+        <img src="./img/WhatsApp Image 2023-06-05 at 2.09.03 PM.jpeg" alt="User 2">
+      </div>
+      <div class="chat-content">
+        <div class="chat-sender">Dhrumil <a href="#" target="_blank" class="whatsapp-icon">
+          <i class="fab fa-whatsapp"></i></a></div>
+       
+        <div class="chat-message">Can you send me the document?</div>
+        <div class="chat-time">10:55 AM</div>
+      </div>
+      <div class="chat-check-icon">
+        <i class="fas fa-check-double"></i>
+      </div>
+    </div>
+
+    <div class="chat-item">
+      <div class="chat-avatar">
+        <img src="./img/7.jpeg" alt="User 2">
+      </div>
+      <div class="chat-content">
+        <div class="chat-sender">Gotam<a href="#" target="_blank" class="whatsapp-icon">
+          <i class="fab fa-whatsapp"></i></a></div>
+       
+        <div class="chat-message">Can you send me the document?</div>
+        <div class="chat-time">10:55 AM</div>
+      </div>
+      <div class="chat-check-icon">
+        <i class="fas fa-check-double"></i>
+      </div>
+    </div>
+
+    
+  </div>    
+</div>
+
+
+ <div class="man">
+  <div class="row">
+    <div class="col-sm-12 col-12">
+    <div class="col-sm-5">
+      <button class="btn btn">Message</button>
+    </div>
+    <div class="col-sm-5">
+      <button class="btn btn">Segments</button>
+    </div>
+  </div>
+  </div>
+</div>  
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    
 <script src="./js/jquery-3.6.1.min.js"></script>
-<script>
 
-document.addEventListener("DOMContentLoaded", function() {
+<script>document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("searchIcon").addEventListener("click", function() {
     search();
   });
@@ -196,26 +194,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-
-  var firstChatItem = document.querySelector(".chat-item");
-
-
- 
-  document.getElementById("messageButton").addEventListener("click", function() {
- 
-    firstChatItem.classList.add("hover-effect");
-
-    
-    setTimeout(function() {
-      firstChatItem.classList.remove("hover-effect");
-    }, 1000);
-  });
-});
-
-</script>
-
 </script>
 </body>
-</html>
+</html>  
+
+
+

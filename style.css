@@ -183,6 +183,10 @@ cursor: pointer;
 .search-container {
   display: none;
 }
+button.btn.btn-1 {
+  border: 1px solid brown;
+  color: orangered;
+}
 
 .search-container.active {
   display: block;

@@ -12,17 +12,37 @@
 <body>
 
 <div class="chat-container">
-    <div class="chat-header">
+    <!-- <div class="chat-header">
    <div class="log"> <i class="fa-solid fa-arrow-left-long"></i><img src="./img/logo.png" alt="Chat Logo">
     <h5>Blue Chat</h5>
   </div>
    
     <div class="chat-actions">
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+      </div>
       <i class="fas fa-search" id="searchIcon"></i>
-      
       <i class="fas fa-plus"></i>
     </div>
-  </div>  
+  </div>   -->
+  <div class="chat-header">
+    <div class="log">
+      <i class="fa-solid fa-arrow-left-long"></i>
+      <img src="./img/logo.png" alt="Chat Logo">
+       <h5 id="app_name" class="app_name">Blue Chat</h5> 
+      
+    </div>
+    
+    <div class="chat-actions">
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+      </div>
+      <i class="fas fa-search" id="searchIcon"></i>
+      <i class="fas fa-plus" id="plusIcon"></i>
+    </div>
+  </div>
+  
+  
   <div class="container">
     <div class="row">
       
@@ -156,6 +176,65 @@
         <i class="fas fa-check-double"></i>
       </div>
     </div>
+    <div class="chat-item">
+      <div class="chat-avatar">
+        <img src="./img/7.jpeg" alt="User 2">
+      </div>
+      <div class="chat-content">
+        <div class="chat-sender">Dhanraj sinh <a href="#" target="_blank" class="email-icon"><i class="fa-solid fa-envelope"></i></a></div>
+        <div class="chat-message">Can you send me the document?</div>
+        <div class="chat-time">Yesterday</div>
+      </div>
+      <div class="chat-check-icon">
+        <i class="fas fa-check"></i>
+      </div>
+    </div>
+
+    <div class="chat-item">
+      <div class="chat-avatar">
+        <img src="./img/WhatsApp Image 2023-06-05 at 2.09.03 PM.jpeg" alt="User 2">
+      </div>
+      <div class="chat-content">
+        <div class="chat-sender">Manful<a href="#" target="_blank" class="instagarm-icone"><i class="fa-brands fa-instagram"></i></a></div>
+        <div class="chat-message">Can you send me the document?</div>
+        <div class="chat-time">9:50 AM</div>
+      </div>
+      <div class="chat-check-icon">
+        <i class="fas fa-check-double"></i>
+      </div>
+    </div>
+
+    <div class="chat-item">
+      <div class="chat-avatar">
+        <img src="./img/7.jpeg" alt="User 2">
+      </div>
+      <div class="chat-content">
+        <div class="chat-sender">Gotam<a href="#" target="_blank" class="whatsapp-icon">
+          <i class="fab fa-whatsapp"></i></a></div>
+       
+        <div class="chat-message">Can you send me the document?</div>
+        <div class="chat-time">10:55 AM</div>
+      </div>
+      <div class="chat-check-icon">
+        <i class="fas fa-check-double"></i>
+      </div>
+    </div>
+    
+    <div class="chat-item">
+      <div class="chat-avatar">
+        <img src="./img/7.jpeg" alt="User 2">
+      </div>
+      <div class="chat-content">
+        <div class="chat-sender">Gotam<a href="#" target="_blank" class="whatsapp-icon">
+          <i class="fab fa-whatsapp"></i></a></div>
+       
+        <div class="chat-message">Can you send me the document?</div>
+        <div class="chat-time">10:55 AM</div>
+      </div>
+      <div class="chat-check-icon">
+        <i class="fas fa-check-double"></i>
+      </div>
+    </div>
 
     
   </div>    
@@ -176,26 +255,38 @@
 </div>  
 
 
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 <script src="./js/jquery-3.6.1.min.js"></script>
 
-<script>document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("searchIcon").addEventListener("click", function() {
-    search();
+
+
+<script>
+  
+  //   $(document).ready(function() {
+  //  $('#searchIcon').click(function() {
+  //   //  $("#app_name").css("display", "block")
+  //     $('#app_name').css("display", "none")
+  //    $('.search-container').toggleClass('active');
+  //   });
+  // });
+
+  $(document).ready(function() {
+  $('#searchIcon').click(function() {
+    $("#app_name").css("display", function(index, currentValue) {
+      return (currentValue === "block") ? "none" : "block";
+    });
+    $('.search-container').toggleClass('active');
   });
-
-  function search() {
-    var searchInput = prompt("Manful Singh Raj:");
-
-    if (searchInput) {
-      console.log("Performing search for: " + searchInput);
-      
-    } else {
-      console.log("Search cancelled");
-    }
-  }
 });
+
+
+
+
 </script>
+
 </body>
 </html>  
 

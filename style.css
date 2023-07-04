@@ -221,7 +221,7 @@ input#searchInput {
   margin: 20px auto;
   background-color: #fff;
   padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ 
   text-align: center;
 }
 
@@ -252,6 +252,10 @@ footer{
   right: 0;
   left:0;
   background-color: #fff;
+}
+footer button{
+  width: 100px;
+  text-align: center;
 }
 
 

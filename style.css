@@ -166,7 +166,7 @@ cursor: pointer;
 .chat-list {
   list-style-type: none;
   padding: 0;
-  height: 70vh;
+  height: 65vh;
   overflow: scroll;
   margin-top: 20px;
 }

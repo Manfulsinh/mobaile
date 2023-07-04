@@ -216,6 +216,6 @@ cursor: pointer;
   padding: 10px 20px;
   border-radius: 5px;
 }
-.dropdown {
-  text-align: center;
+.btn-group.all {
+  margin-left: 50px;
 }
